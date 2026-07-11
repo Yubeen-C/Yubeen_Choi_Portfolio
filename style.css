@@ -166,6 +166,8 @@ h1 {
     justify-content: flex-start;
 }
 
+/* Mktg page */
+
 .button {
     display: inline-block;
     background-color: #6b3f25;
@@ -181,8 +183,21 @@ h1 {
     background-color: #3b2a1a;
 }    
 
+.mktg-card h2{ margin-top: 50px;
+    font-family: "Lato", sans-serif;
+}
+.mktg-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
 
 /* Resources section */
+
+
 .resources {
     max-width: 850px;
     margin: 0 auto 40px;
@@ -212,6 +227,14 @@ h1 {
 .resource-container div a {
     color: black;
     text-decoration: none;
+}
+
+.resource-container div {
+    width: 45%;
+}
+
+.resources cite {
+    display: block;
 }
 
 
