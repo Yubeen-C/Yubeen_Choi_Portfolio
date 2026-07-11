@@ -166,6 +166,22 @@ h1 {
     justify-content: flex-start;
 }
 
+.button {
+    display: inline-block;
+    background-color: #6b3f25;
+    color: #fffaf0;
+    padding: 12px 22px;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #3b2a1a;
+}    
+
+
 /* Resources section */
 .resources {
     max-width: 850px;
