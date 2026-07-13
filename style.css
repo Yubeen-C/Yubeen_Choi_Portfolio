@@ -14,6 +14,7 @@ body.home {
 h1 {
     text-align: center;
     padding: 20px;
+    font-size: 50px;
 }
 
 .book-tabs {
@@ -25,21 +26,21 @@ h1 {
     gap: 8px;
 }
 .book-tabs a {
+    font-size: 13px;
     display: block;
     width: 95px;
-    padding: 14px 10px;
+    padding: 14px 12px;
     background: #9a6542;
     color: white;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
     border-radius: 0 8px 8px 0;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 3px 8px rgba(0, 0, 0.25);
 }
 
 .home h1 {
     font-family: "Sedan SC", serif;
-    font-size: 4.5rem;
     color: #3b2a1a;
     margin: 0;
 }
@@ -87,9 +88,8 @@ h1 {
 
 /* Main image */
 .bookframe img {
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
-    border-radius: 6px;
     padding: 30px;
     margin-top: 50px;
 }
@@ -102,7 +102,6 @@ h1 {
 .about h1 {
     font-family: "Sedan SC", serif;
     text-align: center;
-    font-size: 58px;
     margin: 0;
     padding: 10px;
 }
@@ -127,7 +126,6 @@ h1 {
 .portfolio h1 {
     font-family: "Sedan SC", serif;
     text-align: center;
-    font-size: 58px;
     margin: 0;
 }
 .project-box {
