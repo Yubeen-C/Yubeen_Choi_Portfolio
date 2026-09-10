@@ -7,8 +7,9 @@ body {
 }
 
 /* Home page */
-body.home {
+body {
     background-color: #d8c3a5;
+
 }
 
 h1 {
@@ -42,7 +43,7 @@ h1 {
 .home h1 {
     font-family: "Sedan SC", serif;
     color: #3b2a1a;
-    margin: 0;
+    padding-bottom: 5px;
 }
 
 .book-tabs,
@@ -55,7 +56,7 @@ h1 {
 .bookframe {
     max-width: 750px;
     min-height: 620px;
-    margin: 0 auto 50px;
+    margin: 50px auto 50px;
     padding: 30px;
     background-color: #f7efe2;
     border: 15px solid #6b3f25;
@@ -66,6 +67,10 @@ h1 {
     position: relative;
 }
 
+.bookframe strong {
+    font-size: 25px;
+    font-family: "Sedan SC", serif;
+}
 /* Start button */
 .start-button {
     margin-bottom: 30px;
@@ -94,21 +99,31 @@ h1 {
     padding: 30px;
     margin-top: 50px;
 }
+.intro-text{
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 1.6;
+}
 
 /* About page */
 .page {
     text-align: left;
 }
+.intro-text2 {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .about h1 {
     font-family: "Sedan SC", serif;
     text-align: center;
-    margin: 0;
+    margin: auto;
     padding: 10px;
 }
 
 .about h2 {
-    margin-top: 45px;
+    margin-top: 30px;
     padding-bottom: 8px;
     border-bottom: 2px solid #3b2a1a;
     font-family: "Sedan SC", serif;
@@ -145,6 +160,11 @@ h1 {
     width: 300px;
     text-align: center;
     margin-bottom: 30px;
+}
+.project-card p {
+    text-align: left;
+    width: 250px;
+    margin-left: 35px;
 }
 
 .project-card img {
