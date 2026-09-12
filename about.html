@@ -10,6 +10,16 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sedan+SC&display=swap"
             rel="stylesheet" />
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const t = "Email: ",
+                    d = "gmail.com",
+                    u1 = "yubeen",
+                    u2 = "choi26";
+                const target = document.getElementById("em-line");
+                target.textContent = `${t}${u1}${u2}@${d}`;
+            });
+        </script>
     </head>
     <body class="about">
         <main class="bookframe">
@@ -30,7 +40,10 @@
                         move people’s minds.
                     </p>
                     <h2>Profile</h2>
-                    <p>Location: Bellevue, WA</p>
+                    <p>
+                        <span id="em-line"></span><br />
+                        Location: Bellevue, WA
+                    </p>
 
                     <h2>Education</h2>
                     <ul>
