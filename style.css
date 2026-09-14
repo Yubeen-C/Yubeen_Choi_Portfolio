@@ -20,7 +20,8 @@ h2 {
     font-family: "Sedan SC", serif;
     color: #3b2a1a;
 }
-/* 전체배경 + 이름 + 옆에 탭 디자인 */
+
+/* 옆에 탭 디자인 */
 .book-tabs {
     position: absolute;
     top: 70px;
@@ -40,15 +41,34 @@ h2 {
     color: white;
     text-decoration: none;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     border-radius: 0 8px 8px 0;
     box-shadow: 2px 3px 8px rgba(0, 0, 0.25);
+    /* 변화할 때 부드럽게 움직이도록 애니메이션 효과 부여 */
+    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .book-tabs a:hover {
     background-color: #f7efe2;
     color: #9a6542;
+    font-weight: bold;
     cursor: pointer;
+    /* ② 왼쪽으로 5픽셀 툭 튀어나오게 만들기 (팝 효과) */
+    transform: translateX(-5px);
+    /* ③ 튀어나오면서 뒤에 생기는 더 크고 진한 그림자 효과 */
+    box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.4px #9a6542;
 }
+.book-tabs a.active {
+    background-color: #f7efe2 !important;
+    color: #9a6542 !important;
+    font-weight: bold;
+    /* 팝 효과: 오른쪽으로 5px 툭 튀어나와서 멈춰있게 설정 */
+    transform: translateX(-5px);
+    /* 튀어나온 상태에 맞게 그림자도 더 진하게 유지 */
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.35);
+    -webkit-text-stroke: 0.4px #9a6542 !important;
+}
+
 /* Main book-frame area */
 .bookframe {
     max-width: 750px;
@@ -128,7 +148,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2열 구조 고정 */
     gap: 40px 30px;
-    padding: 20px 20px;
+    padding: 20px auto;
     align-items: start;
 }
 .project-card /* 3. 모든 프로젝트 카드 공통 스타일 (높이 맞춤 및 아늑한 연출) */ {
@@ -145,15 +165,14 @@ h3 {
 }
 .project-card img /*  4. 이미지 크기 조절 (가운데 정렬 및 세로 높이 고정) */ {
     display: block;
-    width: 300px; /* 가로 크기 고정 */
+    width: 330px; /* 가로 크기 고정 */
     height: 300px; /* 세로 높이를 300px로 똑같이 제한 */
     object-fit: contain; /* 원본 비율이 깨지지 않고 상자에 예쁘게 채워지도록 설정 */
     margin: 0 auto 10px auto; /* 정중앙 정렬 및 아래 글자와의 간격 */
 }
-
 .project-card p /*  6. 본문 설명 스타일 (가독성 향상) */ {
     font-size: 0.95rem;
-    color: dimgrey; /* 편안한 그레이 톤 */
+    color: dimgrey;
     line-height: 1.6;
     margin-bottom: 15px;
     flex-grow: 1; /* 텍스트 양이 달라도 레이아웃이 유지되도록 밀어주기 */
