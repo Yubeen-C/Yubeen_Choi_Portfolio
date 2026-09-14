@@ -16,7 +16,7 @@ h1 {
 h2 {
     text-align: center;
     margin: auto;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: "Sedan SC", serif;
     color: #3b2a1a;
 }
@@ -94,21 +94,17 @@ h2 {
 }
 .intro-text {
     text-align: center;
-    margin: 10px auto;
-    padding: 0 30px;
+    margin: 20px 0 0 0;
+    padding: 0 65px;
 }
 .about h3 {
     font-family: "Sedan SC", serif;
-    font-size: 35px;
+    font-size: 1.5rem;
     margin: auto;
     padding: 10px;
-}
-.about h3 {
     margin-top: 30px;
     padding-bottom: 8px;
     border-bottom: 2px solid #3b2a1a;
-    font-family: "Sedan SC", serif;
-    font-size: 28px;
 }
 .about p,
 .about li {
