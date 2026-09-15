@@ -89,33 +89,64 @@ h2 {
 }
 
 /* About page */
+.page h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2b1a11;
+    margin-top: 35px;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #2b1a11; /* 단정하고 확실한 구분선 */
+    text-transform: capitalize;
+}
+/* 첫 번째 타이틀의 상단 여백은 제거해서 라인 맞추기 */
+.profile:first-of-type {
+    margin-top: 0;
+}
 .page {
     text-align: left;
 }
 .intro-text {
     text-align: center;
-    margin: 20px 0 0 0;
-    padding: 0 65px;
+    font-size: 1.05rem;
+    line-height: 1.75; /* 행간을 넓혀 가독성 향상 */
+    color: #4a3525; /* 타이틀보다 부드러운 톤 */
+    max-width: 690px; /* 좌우 폭을 제한해 시선 집중 */
+    margin: 10px auto 50px auto;
 }
-.about h3 {
-    font-family: "Sedan SC", serif;
-    font-size: 1.5rem;
-    margin: auto;
-    padding: 10px;
-    margin-top: 30px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #3b2a1a;
+.page p {
+    font-size: 0.95rem;
+    color: #2b1a11;
+    line-height: 1.6;
 }
-.profile {
-    margin-top: 20px !important;
+.page ul {
+    list-style-type: none; /* 기본 불릿 없애고 깔끔하게 처리 */
+    padding-left: 0;
+    margin-top: 8px;
 }
-.about p,
-.about li {
-    font-family: "Lato", sans-serif;
+.page ul li {
+    position: relative;
+    padding-left: 15px; /* 맞춤 불릿이 들어갈 공간 */
+    margin-bottom: 14px; /* 리스트 항목 간의 여백 */
+    font-size: 0.95rem;
     line-height: 1.5;
+    color: #2b1a11;
 }
-.about ul {
-    padding-left: 20px;
+/* 둥근 브라운 불릿 직접 구현 */
+.page ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    color: #2b1a11;
+    font-size: 1.1rem;
+}
+/* 학력 및 경력 부연 설명 (small 태그) */
+.page ul li small {
+    display: block;
+    font-size: 0.85rem;
+    color: #7a6555; /* 서브 텍스트는 약간 연한 갈색 */
+    margin-top: 4px;
 }
 
 /* view more button */
